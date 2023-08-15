@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
   /* height: 100%; */
 }
@@ -88,55 +88,286 @@ nav {
   background-position: center center;
 }
 
-@media screen and (min-width: 1201px) {
+/*Videos recentes*/
+
+.video-recentes {
+  /* background-color: red; */
+  display: 	flex;
+  flex-direction: column;
+  margin-top: 10%;
 }
 
-@media screen and (max-width: 1200px) {
-  nav {
-    display: flex;
+.deo-debut {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  height: 43px;
+  background-color: rgba(255, 255, 255, 0.32);
+  border-radius: 41px;
+  color: white;
+  font-size: 13px;
+}
+
+.bloc-deo {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  gap: 2%;
+  padding-left: 5%;
+}
+
+.video {
+  width: 20%;
+  height: 150px;
+  background-color: rgba(252, 226, 42, 1);
+  margin-top: 5%;
+}
+
+/* Musiques recentes */
+
+.musique-recentes {
+  /* background-color: red; */
+  display: 	flex;
+  flex-direction: column;
+  margin-top: 10%;
+}
+
+.music-debut {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  height: 43px;
+  background-color: rgba(255, 255, 255, 0.32);
+  border-radius: 41px;
+  color: white;
+  font-size: 13px;
+}
+
+.bloc-music {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  gap: 2%;
+  padding-left: 5%;
+}
+
+.musique {
+  width: 20%;
+  height: 150px;
+  background-color: rgba(252, 226, 42, 1);
+  margin-top: 5%;
+}
+
+/*Conseil*/
+
+.conseil {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  width: auto;
+}
+
+.conseil p {
+  color: white;
+  font-size: 32px;
+  width: 48%;
+  text-align: center;
+}
+
+.inscrip-conseil {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 13%;
+  height: 58px;
+  background-color: white;
+  font-size: 20px;
+  border-radius: 36px;
+  border: 1px solid rgba(252, 226, 42, 1);
+  margin-top: 5%;
+}
+
+/*ABOUT*/
+.about {
+  width: auto;
+  margin-top: 10%;
+}
+
+.about-container {
+  margin: 0 auto;
+  width: 70%;
+  height: 320px;
+  border: 2px solid rgba(252, 226, 42, 1);
+}
+
+.about-container p {
+  font-size: 24px;
+  text-align: center;
+  color: white;
+}
+
+.about-container p span{
+  color: rgba(252, 226, 42, 1);
+}
+
+.title-about {
+}
+
+
+
+/* Media query pour les écrans de taille moyenne */
+@media only screen and  (max-width: 1024px) {
+  .container {
+    width: 95%;
+  }
+
+  nav{
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
   }
 
-  .inscri {
-    display: flex;
+  .bloc-id {
+    flex-direction: row; 
+    .deo-debut {
+      width: 5%;
+    }
     align-items: center;
-    justify-content: center;
-    width: 100px;
-    height: 30px;
-    background-color: white;
-    font-size: 14px;
-    border-radius: 24px;
-    border: 1px solid rgba(252, 226, 42, 1);
-  }
-  .conn {
-    width: 100px;
-    height: 30px;
-    background-color: rgba(252, 226, 42, 1);
-    font-size: 14px;
-    border-radius: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-size: 8px;
   }
 
-  .descript-contain {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    margin-top: 5%;
+   .descript-contain {
+    
   }
 
   .text-descript {
     width: 100%;
-    text-align: left;
+    margin-top: 0; 
+  }
+
+  .text-descript P:first-child {
+    font-size: 30px;
+    margin-top: 10%;
+  }
+
+  .first-video {
+    width: 100%;
+    height: 300px; 
+  }
+
+  /*Videos recentes*/
+
+  .deo-debut {
+    width: auto;
+    font-size: 20px;
+  }
+  .bloc-deo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2%;
+  }
+  
+  .video {
+    width: 30%;
+  }
+
+    /* Musiques recentes */
+
+  .music-debut {
+    width: auto;
+    font-size: 20px;
+  }
+  .bloc-music {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2%;
+  }
+  
+  .musique {
+    width: 30%;  
+  }
+
+   /*Conseil*/ 
+  
+  .conseil p {
+    width: 60%;
+  }
+
+  .inscrip-conseil {
+    width: 17%;
+    height: 48px;
+    background-color: white;
+    font-size: 16px;
+    border-radius: 26px;
+    border: 1px solid rgba(252, 226, 42, 1);
     margin-top: 5%;
   }
+}    
+
+
+/* Media query pour les écrans de petite taille (par exemple, mobile) */
+@media only screen and (max-width: 768px) {
   .text-descript P:first-child {
-    font-size: 16px;
-    color: white;
-    position: relative;
+    font-size: 20px;
   }
+
+  .inscri,
+  .conn {
+    width: auto;
+    padding: 5px;
+  }
+
+  .descript-contain {
+    margin-top: 10%;
+    flex-direction: column;
+    gap: 10px;
+
+  }
+  
+  .bloc-deo {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    gap: 2%;
+  }
+  
+  .video {
+    width: 70%;
+    padding: 0;
+  }
+
+    /* Musiques recentes */
+
+  .bloc-music {
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    gap: 2%;
+  }
+    
+  .musique {
+    width: 70%;
+    padding: 0;
+  }
+    
+  .conseil p {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .inscrip-conseil {
+    width: 35%;
+    height: 48px;
+    background-color: white;
+    font-size: 16px;
+    border-radius: 26px;
+    border: 1px solid rgba(252, 226, 42, 1);
+    margin-top: 5%;
+  }  
 }

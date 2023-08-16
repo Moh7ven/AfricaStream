@@ -92,7 +92,7 @@ nav {
 
 .video-recentes {
   /* background-color: red; */
-  display: 	flex;
+  display: flex;
   flex-direction: column;
   margin-top: 10%;
 }
@@ -128,7 +128,7 @@ nav {
 
 .musique-recentes {
   /* background-color: red; */
-  display: 	flex;
+  display: flex;
   flex-direction: column;
   margin-top: 10%;
 }
@@ -188,49 +188,114 @@ nav {
   font-size: 20px;
   border-radius: 36px;
   border: 1px solid rgba(252, 226, 42, 1);
-  margin-top: 5%;
+  margin-top: 3%;
 }
 
 /*ABOUT*/
 .about {
   width: auto;
-  margin-top: 10%;
+  margin-top: 7%;
 }
 
 .about-container {
+  position: relative;
   margin: 0 auto;
-  width: 70%;
-  height: 320px;
+  width: 50%;
+  height: 350px;
   border: 2px solid rgba(252, 226, 42, 1);
+  border-radius: 17px;
 }
 
 .about-container p {
   font-size: 24px;
   text-align: center;
   color: white;
+  padding: 0 15%;
+  text-align: center;
 }
 
-.about-container p span{
+.about-container p span {
   color: rgba(252, 226, 42, 1);
 }
 
-.title-about {
+.about-logo1 img {
+  width: 70px;
+  height: 70px;
+  left: 0;
 }
 
+.about-logo2 img {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  right: 0;
+  bottom: 0;
+}
 
+.title-about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 179px;
+  height: 54px;
+  border-radius: 12px;
+  background-color: rgba(252, 226, 42, 1);
+  color: rgba(37, 39, 49, 1);
+  font-size: 24px;
+  margin: 0 auto;
+  margin-top: -3%;
+}
+
+/*FOOTER*/
+
+footer {
+  width: auto;
+  height: 110px;
+  background-color: white;
+  border-top: 5px;
+  border-style: solid;
+  border-color: rgba(252, 226, 42, 1);
+  margin-top: 7%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2%;
+}
+
+.logos-foot {
+}
+
+.social {
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+}
+
+.africa-foot img {
+  width: 168px;
+  height: 41px;
+}
+
+.copyright {
+  font-size: 15px;
+}
 
 /* Media query pour les écrans de taille moyenne */
-@media only screen and  (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .container {
     width: 95%;
   }
 
-  nav{
+  nav {
     flex-direction: column;
   }
 
   .bloc-id {
-    flex-direction: row; 
+    flex-direction: row;
     .deo-debut {
       width: 5%;
     }
@@ -238,13 +303,12 @@ nav {
     font-size: 8px;
   }
 
-   .descript-contain {
-    
+  .descript-contain {
   }
 
   .text-descript {
     width: 100%;
-    margin-top: 0; 
+    margin-top: 0;
   }
 
   .text-descript P:first-child {
@@ -254,7 +318,7 @@ nav {
 
   .first-video {
     width: 100%;
-    height: 300px; 
+    height: 300px;
   }
 
   /*Videos recentes*/
@@ -270,12 +334,12 @@ nav {
     align-items: flex-start;
     gap: 2%;
   }
-  
+
   .video {
     width: 30%;
   }
 
-    /* Musiques recentes */
+  /* Musiques recentes */
 
   .music-debut {
     width: auto;
@@ -288,13 +352,13 @@ nav {
     align-items: flex-start;
     gap: 2%;
   }
-  
+
   .musique {
-    width: 30%;  
+    width: 30%;
   }
 
-   /*Conseil*/ 
-  
+  /*Conseil*/
+
   .conseil p {
     width: 60%;
   }
@@ -308,8 +372,24 @@ nav {
     border: 1px solid rgba(252, 226, 42, 1);
     margin-top: 5%;
   }
-}    
 
+  /*About*/
+
+  .about-container {
+    width: 70%;
+  }
+
+  .about-container p {
+    margin-top: -5%;
+    font-size: 22px;
+  }
+
+  /*FOOTER*/
+
+  footer {
+    height: 120px;
+  }
+}
 
 /* Media query pour les écrans de petite taille (par exemple, mobile) */
 @media only screen and (max-width: 768px) {
@@ -327,22 +407,21 @@ nav {
     margin-top: 10%;
     flex-direction: column;
     gap: 10px;
-
   }
-  
+
   .bloc-deo {
     display: flex;
     /* flex-wrap: wrap; */
     justify-content: center;
     gap: 2%;
   }
-  
+
   .video {
     width: 70%;
     padding: 0;
   }
 
-    /* Musiques recentes */
+  /* Musiques recentes */
 
   .bloc-music {
     display: flex;
@@ -350,12 +429,12 @@ nav {
     justify-content: center;
     gap: 2%;
   }
-    
+
   .musique {
     width: 70%;
     padding: 0;
   }
-    
+
   .conseil p {
     width: 100%;
     font-size: 16px;
@@ -369,5 +448,72 @@ nav {
     border-radius: 26px;
     border: 1px solid rgba(252, 226, 42, 1);
     margin-top: 5%;
-  }  
+  }
+  /*About*/
+
+  .about-container {
+    margin: 0 auto;
+    width: 50%;
+    height: 200px;
+    border: 2px solid rgba(252, 226, 42, 1);
+    border-radius: 17px;
+  }
+
+  .title-about {
+    width: 159px;
+    height: 34px;
+    border-radius: 12px;
+    font-size: 15px;
+    margin-top: -6%;
+  }
+
+  .about-logo1 img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .about-logo2 img {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+  }
+
+  .about-container {
+    width: 70%;
+  }
+
+  .about-container p {
+    margin-top: -5%;
+    font-size: 12px;
+  }
+
+  /*FOOTER*/
+
+  footer {
+    height: 100px;
+    margin-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+  }
+
+  .social {
+    width: 20px;
+    height: 20px;
+  }
+
+  .africa-foot img {
+    width: 100px;
+    height: 30px;
+  }
+
+  .copyright {
+    font-size: 8px;
+  }
 }

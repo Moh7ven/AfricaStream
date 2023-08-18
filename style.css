@@ -34,6 +34,7 @@ nav {
   font-size: 14px;
   border-radius: 24px;
   border: 1px solid rgba(252, 226, 42, 1);
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.25);
 }
 
 .conn {
@@ -45,6 +46,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.25);
 }
 
 .bloc-id {
@@ -86,6 +88,8 @@ nav {
   background: url(./img/boy-africa.jpg);
   background-size: cover;
   background-position: center center;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
 }
 
 /*Videos recentes*/
@@ -95,6 +99,7 @@ nav {
   display: flex;
   flex-direction: column;
   margin-top: 10%;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.25);
 }
 
 .deo-debut {
@@ -107,6 +112,7 @@ nav {
   border-radius: 41px;
   color: white;
   font-size: 13px;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.25);
 }
 
 .bloc-deo {
@@ -117,11 +123,55 @@ nav {
   padding-left: 5%;
 }
 
+.bloc-deo div:nth-child(2) {
+  background: url("./img/image-film/la-canne-du-roi.jpeg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.bloc-deo div:nth-child(3) {
+  background: url("./img/image-film/le_mandat.jpeg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.bloc-deo div:nth-child(4) {
+  background: url("./img/image-film/binti.jpeg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.bloc-deo div:nth-child(5) {
+  background: url("./img/image-film/m_les-3-lascars-redimensionn.jpeg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.bloc-deo div:nth-child(6) {
+  background: url("./img/image-film/pokou.jpeg");
+  background-position: center center;
+  background-size: cover;
+}
+
 .video {
   width: 20%;
   height: 150px;
-  background-color: rgba(252, 226, 42, 1);
+  background: url("./img/image-film/aya-de-yopougon.jpeg");
+  background-position: center center;
+  background-size: cover;
   margin-top: 5%;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.video p {
+  position: absolute;
+  color: rgba(252, 226, 42, 1);
+  font-size: 15px;
+  bottom: 0;
+  margin-left: 20%;
+  margin-bottom: -10%;
 }
 
 /* Musiques recentes */
@@ -131,6 +181,7 @@ nav {
   display: flex;
   flex-direction: column;
   margin-top: 10%;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.25);
 }
 
 .music-debut {
@@ -143,6 +194,8 @@ nav {
   border-radius: 41px;
   color: white;
   font-size: 13px;
+  margin-top: 5%;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.25);
 }
 
 .bloc-music {
@@ -156,8 +209,11 @@ nav {
 .musique {
   width: 20%;
   height: 150px;
-  background-color: rgba(252, 226, 42, 1);
+  background: url("./img/image-music/trophy_room.png");
+  background-position: center center;
+  background-size: cover;
   margin-top: 5%;
+  border-radius: 5px;
 }
 
 /*Conseil*/
@@ -453,6 +509,7 @@ footer {
 
   .about-container {
     margin: 0 auto;
+    margin-top: 10%;
     width: 50%;
     height: 200px;
     border: 2px solid rgba(252, 226, 42, 1);
@@ -495,6 +552,7 @@ footer {
     padding-left: 5%;
     padding-right: 5%;
   }
+
   .footer-container {
     display: flex;
     flex-direction: column;
@@ -511,6 +569,7 @@ footer {
   .africa-foot img {
     width: 100px;
     height: 30px;
+    order: 1;
   }
 
   .copyright {

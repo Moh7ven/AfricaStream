@@ -9,6 +9,10 @@ body {
   background-color: #1e1e2a;
 }
 
+a {
+ text-decoration: none;
+}
+
 .container {
   width: 90%;
   margin: 0 auto;
@@ -37,6 +41,16 @@ nav {
   box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.25);
 }
 
+.inscri a {
+  color: black;
+}
+
+.inscri:hover {
+  background-color: #ffd700;
+  color: white;
+  font-weight: bold;
+}
+
 .conn {
   width: 136px;
   height: 38px;
@@ -47,6 +61,16 @@ nav {
   align-items: center;
   justify-content: center;
   box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.conn a{
+  color: black;
+}
+
+.conn:hover {
+  background-color: white;
+  color: black;
+  font-weight: bold;
 }
 
 .bloc-id {
@@ -137,6 +161,7 @@ nav {
   flex-direction: column;
   margin-top: 10%;
   /* box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.25); */
+  animation: apparition 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 .deo-debut {
@@ -145,11 +170,11 @@ nav {
   align-items: center;
   width: 15%;
   height: 43px;
-  background-color: rgba(255, 255, 255, 0.32);
+  background-color: black;
   border-radius: 41px;
   color: white;
   font-size: 13px;
-  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.441);
   animation: augment 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
 }
 
@@ -252,12 +277,13 @@ nav {
   align-items: center;
   width: 15%;
   height: 43px;
-  background-color: rgba(255, 255, 255, 0.32);
+  background-color: black;
   border-radius: 41px;
   color: white;
   font-size: 13px;
   margin-top: 5%;
   box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.25);
+  animation: augment 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
 }
 
 .bloc-music {
@@ -309,7 +335,7 @@ nav {
   border-radius: 36px;
   border: 1px solid #ffd700;
   margin-top: 3%;
-  animation: vibration 0.3s linear infinite both;
+  animation: vibration 1.5s linear infinite both;
 }
 
 .inscrip-conseil:hover {
@@ -370,6 +396,7 @@ nav {
   width: 70px;
   height: 70px;
   left: 0;
+  animation: vibration 1s linear infinite both;
 }
 
 .about-logo2 img {
@@ -378,6 +405,7 @@ nav {
   height: 70px;
   right: 0;
   bottom: 0;
+  animation: vibration 1s linear infinite both;
 }
 
 .title-about {

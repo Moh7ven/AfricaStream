@@ -91,7 +91,7 @@ a {
   box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.25);
 }
 
-.new {
+.music-side {
   height: 100%;
   width: 80%;
   border-radius: 6px;
@@ -182,7 +182,7 @@ nav {
   margin-top: 5%;
 }
 
-/* Musiques recentes */
+/* raps recentes */
 
 /* .recentes-plus {
   display: flex;
@@ -229,9 +229,9 @@ nav {
   box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.25);
 } */
 
-/*Videos recentes*/
+/*afropops recentes*/
 
-.video-recentes {
+.afropop-container {
   display: flex;
   flex-direction: column;
   /* box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.25); */
@@ -241,7 +241,7 @@ nav {
   margin-top: 5%;
 }
 
-.deo-debut {
+.afropop-debut {
   position: relative;
   display: flex;
   justify-content: center;
@@ -256,73 +256,60 @@ nav {
   margin-left: 5%;
 }
 
-.deo-debut::after {
-  position: absolute;
-  content: "";
-  background: url('../img/nouveau-tag.png');
-  background-size: 30px 30px;
-  display: inline-block;
-  height: 30px;
-  width: 30px;
-  right: 0;
-  margin-top: -6%;
-}
-
-
-.bloc-deo {
+.bloc-afropop {
   display: flex;
   flex-wrap: wrap;
   gap: 1%;
   padding-left: 5%;
 }
 
-.bloc-deo div:first-child {
+.bloc-afropop div:first-child {
   background: url("../img/image-film/aya-de-yopougon.jpeg");
   background-position: center center;
   background-size: cover;
 }
-.bloc-deo div:nth-child(2) {
+.bloc-afropop div:nth-child(2) {
   background: url("../img/image-film/la-canne-du-roi.jpeg");
   background-position: center center;
   background-size: cover;
 }
 
-.bloc-deo div:nth-child(3) {
+.bloc-afropop div:nth-child(3) {
   background: url("../img/image-film/le_mandat.jpeg");
   background-position: center center;
   background-size: cover;
 }
 
-.bloc-deo div:nth-child(4) {
+.bloc-afropop div:nth-child(4) {
   background: url("../img/image-film/binti.jpeg");
   background-position: center center;
   background-size: cover;
 }
 
-.bloc-deo div:nth-child(5) {
+.bloc-afropop div:nth-child(5) {
   background: url("../img/image-film/m_les-3-lascars-redimensionn.jpeg");
   background-position: center center;
   background-size: cover;
 }
 
-.bloc-deo div:nth-child(6) {
+.bloc-afropop div:nth-child(6) {
   background: url("../img/image-film/pokou.jpeg");
   background-position: center center;
   background-size: cover;
 }
 
-.bloc-deo div:nth-child(7) {
+.bloc-afropop div:nth-child(7) {
   background: url("../img/image-film/pokou.jpeg");
   background-position: center center;
   background-size: cover;
 }
-.bloc-deo div:nth-child(8) {
+.bloc-afropop div:nth-child(8) {
   background: url("../img/image-film/pokou.jpeg");
   background-position: center center;
   background-size: cover;
 }
 
-.video {
+.afropop {
   width: 12%;
   height: 230px;
   margin-top: 5%;
@@ -331,7 +318,7 @@ nav {
   box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.25);
 }
 
-.video p {
+.afropop p {
   position: absolute;
   color: #ffd700;
   font-size: 15px;
@@ -340,9 +327,9 @@ nav {
   margin-bottom: -10%;
 }
 
-/* Musiques recentes */
+/* raps recentes */
 
-.musique-recentes {
+.rap-container {
   /* background-color: red; */
   display: flex;
   flex-direction: column;
@@ -351,7 +338,7 @@ nav {
   animation: augment 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-.music-debut {
+.rap-debut {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -368,19 +355,7 @@ nav {
   margin-left: 5%;
 }
 
-.music-debut::after {
-  position: absolute;
-  content: "";
-  background: url('../img/nouveau-tag.png');
-  background-size: 30px 30px;
-  display: inline-block;
-  height: 30px;
-  width: 30px;
-  right: 0;
-  margin-top: -6%;
-}
-
-.bloc-music {
+.bloc-rap {
   display: flex;
   flex-wrap: wrap;
   gap: 1%;
@@ -388,7 +363,7 @@ nav {
 }
 
 
-.musique {
+.rap {
   width: 12%;
   height: 230px;
   background: url("../img/image-music/trophy_room.png");
@@ -400,34 +375,6 @@ nav {
   box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.25);
 }
 
-/*VOIR PLUS*/
-.voir-plus {
-  position: relative;
-  width: 100%;
-  margin-top: 1%;
-  margin-bottom: 1%;
-}
-
-.voir-plus-el {
-  position: absolute;
-  height: 3rem;
-  width: 8rem;
-  background-color: #ffd700;
-  border-radius: 38px;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.voir-plus-el a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  color: #1e1e2a;
-  font-weight: bold;
-}
 
 /*PAGE SUIVANTE*/
 
@@ -534,44 +481,37 @@ footer {
     width: 20%;
   } */
 
-  /*VIDEOS*/
+  /*afropopS*/
 
-  .deo-debut {
+  .afropop-debut {
     width: auto;
     font-size: 20px;
   }
-  .bloc-deo {
+  .bloc-afropop {
     display: flex;
     align-items: flex-start;
     gap: 4%;
   }
 
-  .video {
+  .afropop {
     width: 30%;
   }
 
-  /*MUSIQUE*/
+  /*rap*/
 
-  .music-debut {
+  .rap-debut {
     width: auto;
     font-size: 20px;
   }
-  .bloc-music {
+  .bloc-rap {
     display: flex;
     align-items: flex-start;
     gap: 4%;
   }
 
-  .musique {
+  .rap {
     width: 30%;
   }
-
-  /*VOIR PLUS*/
-  .voir-plus {
-    margin-top: 3%;
-    margin-bottom: 5%;
-  }
-
   /*PAGE SUIVANTE*/
 
   .next-page {
@@ -638,44 +578,32 @@ footer {
     padding: 0;
   } */
 
-  /*VIDEO*/
-  .bloc-deo {
+  /*afropop*/
+  .bloc-afropop {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 5%;
   }
 
-  .video {
+  .afropop {
     width: 60%;
     padding: 0;
   }
 
-  /*MUSIQUE*/
-  .bloc-music {
+  /*rap*/
+  .bloc-rap {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 5%;
   }
 
-  .musique {
+  .rap {
     width: 60%;
     padding: 0;
   }
 
-  /*VOIR PLUS*/
-  .voir-plus {
-    margin-top: 3%;
-    margin-bottom: 10%;
-  }
-  .voir-plus p {
-    display: none;
-  }
-  .voir-plus-el {
-    width: 2rem;
-    height: 2rem;
-  }
 
   /*PAGE SUIVANTE*/
   .next-page {

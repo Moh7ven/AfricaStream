@@ -178,11 +178,11 @@ nav {
   margin: 0 auto;
 }
 
-/* .principal {
+.principal {
   margin: 0 auto;
-  width: 80%;
+  width: 70%;
   margin-top: 10%;
-} */
+}
 
 /*RETURN*/
 .return {
@@ -190,6 +190,7 @@ nav {
   height: 31px;
   width: 80px;
   margin-left: 10%;
+  margin-top: 5%;
   background-color: #ffd700;
   border-radius: 20px;
   display: flex;
@@ -203,15 +204,80 @@ nav {
 
 /*CARD-PROFIL*/
 
-/* .card-profil {
-  width: 450px;
-  height: 33.5rem;
+.card-profil {
+  width: 390px;
+  height: 30rem;
   background-color: white;
   margin: 0 auto;
   border-radius: 15px;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.718);
-  margin-top: 5%;
-} */
+  border: 2px solid#ffd700;
+  margin-top: 7%;
+  position: relative;
+
+}
+
+.part-blue {
+  position: absolute;
+  top: 0;
+  background-color: #1e1e2a;
+  width: 100%;
+  height: 10rem;
+  border-radius: 15px 15px 0px 0px;
+  z-index: 1;    
+}
+
+.img-profil{
+  width: 30%;
+  height: 25%;
+  margin-left: 35%;
+  margin-top: 23%;
+  position: absolute;
+  z-index: 2;
+}
+
+.info-perso {
+  position: absolute;
+  margin-top: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  width: 100%;
+}
+
+.names, .email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+
+.info-perso img{
+  height: 24px;
+  width: 24px;
+}
+
+.info-perso span{
+  width: 100%;
+}
+
+
+.names {
+
+}
+
+.editer  {
+  width: 70px;
+  height: 40px;
+  background-color: #ffd700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  border-radius: 15px;
+}
 
 /* Media query pour les écrans de taille moyenne */
 @media only screen and (max-width: 1024px) {
@@ -223,6 +289,9 @@ nav {
   .logo-side {
     width: 100%;
     height: 44px;
+  }
+  .return {
+    margin-top: 5%;
   }
 }
 
@@ -275,4 +344,36 @@ nav {
     width: 38px;
     height: 38px;
   }
+
+  .return {
+    width: 50px;
+    margin-top: 5%;
+  }
+
+  .return img {
+    width: 30px;
+    height: 15px;
+  }
+
+  .principal {
+    width: 100%;
+  }
+
+  /*CARD PROFIL*/
+
+  .card-profil {
+    width: 100%;
+    height: 25rem;
+    margin-left: 6%;
+  }
+
+  .img-profil{
+    width: 38%;
+    height: 24%;
+    margin-left: 35%;
+    margin-top: 40%;
+    position: absolute;
+    z-index: 2;
+  }
+  
 }

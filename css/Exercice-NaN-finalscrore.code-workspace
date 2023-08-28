@@ -1,0 +1,25 @@
+{
+  "folders": [
+	{
+		"path": "../../../Exercice-NaN-finalscrore"
+	},
+	{
+		"path": ".."
+	},
+	{
+		"path": "../../../adidas"
+	},
+	{
+		"path": "../../../05-Design"
+	},
+	{
+		"path": "../../../JS"
+	},
+	{
+		"path": "../../../../Downloads/Grid-exercice"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "AfricanStream"
+  }
+}

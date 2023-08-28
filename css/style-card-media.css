@@ -18,6 +18,16 @@
     margin-top: 3%;
 }
 
+.bloc-joue-plus {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    margin-top: 3%;
+}
+
 .bx {
     position: relative;
     width: 180px;
@@ -101,6 +111,7 @@
     color: white;
     padding: 5px 0px 0px 10px;
     font-size: 17px;
+    font-weight: bold;
 }
 
 .content p {
@@ -120,4 +131,5 @@
     color: white;
     padding: 0px 0px 5px 10px;
     font-size: 10px;
+    font-weight: bold;
 }

@@ -182,17 +182,17 @@ nav {
   margin-top: 5%;
 }
 
-/* REGARDER PLUS */
+/* joue PLUS */
 
-.regarder-plus {
-  display: flex;  
+.joue-plus {
+  display: flex;
   flex-direction: column;
   margin-top: 5%;
   animation: apparition 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   animation: augment 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-.regarder-plus-debut {
+.joue-plus-debut {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -208,36 +208,15 @@ nav {
   animation: apparition 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   animation: augment 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-
-.bloc-regarder-plus {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1%;
-  padding-left: 5%;
-}
-
-.regarder-plus-el {
-  width: 12%;
-  height: 230px;
-  background: url("../img/image-music/trophy_room.png");
-  background-position: center center;
-  background-size: cover;
-  margin-top: 5%;
-  position: relative;
-  border-radius: 5px;
-  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.25);
-}
-
 /*Videos recentes*/
 
 .video-recentes {
   display: flex;
   flex-direction: column;
+  margin-top: 10%;
   /* box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.25); */
   animation: apparition 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   animation: augment 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  margin: 0 auto;
-  margin-top: 5%;
 }
 
 .deo-debut {
@@ -251,87 +230,27 @@ nav {
   color: white;
   font-size: 13px;
   box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.441);
+  animation: apparition 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: augment 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   margin-left: 5%;
 }
 
-
-.bloc-deo {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1%;
-  padding-left: 5%;
-}
-
-.bloc-deo div:nth-child(1) {
-  background: url("../img/image-film/aya-de-yopougon.jpeg");
-  background-position: center center;
-  background-size: cover;
-}
-.bloc-deo div:nth-child(2) {
-  background: url("../img/image-film/la-canne-du-roi.jpeg");
-  background-position: center center;
-  background-size: cover;
-}
-
-.bloc-deo div:nth-child(3) {
-  background: url("../img/image-film/le_mandat.jpeg");
-  background-position: center center;
-  background-size: cover;
-}
-
-.bloc-deo div:nth-child(4) {
-  background: url("../img/image-film/binti.jpeg");
-  background-position: center center;
-  background-size: cover;
-}
-
-.bloc-deo div:nth-child(5) {
-  background: url("../img/image-film/m_les-3-lascars-redimensionn.jpeg");
-  background-position: center center;
-  background-size: cover;
-}
-
-.bloc-deo div:nth-child(6) {
-  background: url("../img/image-film/pokou.jpeg");
-  background-position: center center;
-  background-size: cover;
-}
-
-.bloc-deo div:nth-child(7) {
-  background: url("../img/image-film/pokou.jpeg");
-  background-position: center center;
-  background-size: cover;
-}
-.bloc-deo div:nth-child(8) {
-  background: url("../img/image-film/pokou.jpeg");
-  background-position: center center;
-  background-size: cover;
-}
-
-.video {
-  width: 12%;
-  height: 230px;
-  background-position: center center;
-  background-size: cover;
-  margin-top: 5%;
-  position: relative;
-  border-radius: 5px;
-  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.25);
-}
-
-.video p {
-  position: absolute;
-  color: #ffd700;
-  font-size: 15px;
-  bottom: 0;
-  margin-left: 20%;
-  margin-bottom: -10%;
+@keyframes augment {
+  0% {
+    transform: scaleX(0);
+    transform-origin: 0% 0%;
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+    transform-origin: 0% 0%;
+    opacity: 1;
+  }
 }
 
 /* Musiques recentes */
 
 .musique-recentes {
-  /* background-color: red; */
   display: flex;
   flex-direction: column;
   margin-top: 5%;
@@ -356,13 +275,6 @@ nav {
   margin-left: 5%;
 }
 
-.bloc-music {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1%;
-  padding-left: 5%;
-}
-
 .musique {
   width: 12%;
   height: 230px;
@@ -381,28 +293,7 @@ nav {
   width: 100%;
   margin-top: 1%;
   margin-bottom: 1%;
-}
-
-.voir-plus-el {
-  position: absolute;
-  height: 3rem;
-  width: 8rem;
-  background-color: #ffd700;
-  border-radius: 38px;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.voir-plus-el a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  color: #1e1e2a;
-  font-weight: bold;
-}
+} 
 
 /*PAGE SUIVANTE*/
 
@@ -416,16 +307,15 @@ nav {
   margin: 0 auto;
   margin-top: 5%;
   border-radius: 10px;
-  
 }
 
 .next-page p {
   width: 100%;
-  text-align:center;
+  text-align: center;
   font-weight: bold;
 }
 
-.next-page a{
+.next-page a {
   color: black;
 }
 
@@ -495,17 +385,17 @@ footer {
 
   /*LES PLUS RECENTS*/
 
-  .regarder-plus-debut {
+  .joue-plus-debut {
     width: auto;
     font-size: 20px;
   }
-  .bloc-regarder-plus {
+  .bloc-joue-plus {
     display: flex;
     align-items: flex-start;
     gap: 4%;
   }
 
-  .regarder-plus-el {
+  .joue-plus-el {
     width: 30%;
   }
   /*VIDEOS*/
@@ -554,7 +444,7 @@ footer {
   }
   .next-page p {
     width: 100%;
-    text-align:center;
+    text-align: center;
     font-size: 12px;
     font-weight: bold;
   }
@@ -600,14 +490,14 @@ footer {
   }
 
   /*LES PLUS RECENTS */
-  .bloc-regarder-plus {
+  .bloc-joue-plus {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 5%;
   }
 
-  .regarder-plus-el {
+  .joue-plus-el {
     width: 60%;
     padding: 0;
   }
@@ -621,7 +511,7 @@ footer {
   }
 
   .video {
-    width:60%;
+    width: 60%;
     padding: 0;
   }
 
@@ -659,7 +549,7 @@ footer {
   }
   .next-page p {
     width: 100%;
-    text-align:center;
+    text-align: center;
     font-size: 10px;
     font-weight: bold;
   }

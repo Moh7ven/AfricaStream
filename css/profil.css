@@ -227,45 +227,55 @@ nav {
   z-index: 1;    
 }
 
-.img-profil{
-  width: 30%;
-  height: 25%;
-  margin-left: 35%;
-  margin-top: 23%;
-  position: absolute;
-  z-index: 2;
-}
-
-.info-perso {
-  position: absolute;
-  margin-top: 70%;
+.img-info{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10%;
-  width: 100%;
+  margin-top: 28%;
+}
+
+.img-profil{
+  width: 124px;
+  height: 124px;
+  z-index: 2;
+}
+
+ .info-perso {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  z-index: 2;
 }
 
 .names, .email {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10%;
+  width: 100%;
 }
 
 .info-perso img{
-  height: 24px;
-  width: 24px;
+  height: 30px;
+  width: 30px;
+  
 }
 
 .info-perso span{
   width: 100%;
 }
-
+.info-perso span:nth-child(2){
+  margin-left: 5%;
+}
 
 .names {
+  margin-top: -5%;
+}
 
+.email {
+  margin-top: 5%;
 }
 
 .editer  {
@@ -277,6 +287,50 @@ nav {
   align-items: center;
   margin-top: 10%;
   border-radius: 15px;
+}
+
+.editer:hover {
+  background-color: white;
+  color: #ffd700;
+  font-weight: bold;
+  border: 1px solid #ffd700;
+}
+
+.editer a {
+  color: black;
+  font-weight: bold;
+}
+
+
+/*FOOTER*/
+
+footer {
+  position: relative;
+  width: auto;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 0vh;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+}
+
+.logos-foot {
+}
+
+.social {
+  width: 34px;
+  height: 34px;
+}
+
+.copyright {
+  font-size: 17px;
+  color: white;
+  font-weight: bold;
 }
 
 /* Media query pour les écrans de taille moyenne */
@@ -362,18 +416,43 @@ nav {
   /*CARD PROFIL*/
 
   .card-profil {
-    width: 100%;
+    width: 330px;
     height: 25rem;
-    margin-left: 6%;
   }
 
-  .img-profil{
-    width: 38%;
-    height: 24%;
-    margin-left: 35%;
+  /* .img-profil{
+    width: 88px;
+    height: 88px;
+    margin-left: 40%;
     margin-top: 40%;
     position: absolute;
     z-index: 2;
-  }
+  } */
+
+    /*FOOTER*/
+
+    footer {
+      height: 100px;
+      margin-top: 10%;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  
+    .footer-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5%;
+    }
+  
+    .social {
+      width: 26px;
+      height: 26px;
+    }
+  
+    .copyright {
+      font-size: 8px;
+    }
   
 }

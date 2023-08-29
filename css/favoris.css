@@ -182,53 +182,6 @@ nav {
   margin-top: 5%;
 }
 
-/* music-favs recentes */
-
-/* .recentes-plus {
-  display: flex;
-  flex-direction: column;
-  margin-top: 5%;
-  animation: apparition 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-  animation: augment 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
-.recentes-plus-debut {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 15%;
-  height: 43px;
-  background-color: black;
-  border-radius: 41px;
-  color: white;
-  font-size: 13px;
-  margin-top: 5%;
-  margin-left: 5%;
-  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.25);
-  animation: apparition 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-  animation: augment 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
-.bloc-recentes-plus {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 1%;
-  padding-left: 5%;
-}
-
-.recentes-plus-el {
-  width: 9%;
-  height: 195px;
-  background: url("../img/image-music/trophy_room.png");
-  background-position: center center;
-  background-size: cover;
-  margin-top: 5%;
-  position: relative;
-  border-radius: 5px;
-  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.25);
-} */
-
 /*deo-favs recentes*/
 
 .deo-fav-container {
@@ -256,76 +209,8 @@ nav {
   margin-left: 5%;
 }
 
-.bloc-deo-fav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1%;
-  padding-left: 5%;
-}
 
-.bloc-deo-fav div:first-child {
-  background: url("../img/image-film/aya-de-yopougon.jpeg");
-  background-position: center center;
-  background-size: cover;
-}
-.bloc-deo-fav div:nth-child(2) {
-  background: url("../img/image-film/la-canne-du-roi.jpeg");
-  background-position: center center;
-  background-size: cover;
-}
 
-.bloc-deo-fav div:nth-child(3) {
-  background: url("../img/image-film/le_mandat.jpeg");
-  background-position: center center;
-  background-size: cover;
-}
-
-.bloc-deo-fav div:nth-child(4) {
-  background: url("../img/image-film/binti.jpeg");
-  background-position: center center;
-  background-size: cover;
-}
-
-.bloc-deo-fav div:nth-child(5) {
-  background: url("../img/image-film/m_les-3-lascars-redimensionn.jpeg");
-  background-position: center center;
-  background-size: cover;
-}
-
-.bloc-deo-fav div:nth-child(6) {
-  background: url("../img/image-film/pokou.jpeg");
-  background-position: center center;
-  background-size: cover;
-}
-
-.bloc-deo-fav div:nth-child(7) {
-  background: url("../img/image-film/pokou.jpeg");
-  background-position: center center;
-  background-size: cover;
-}
-.bloc-deo-fav div:nth-child(8) {
-  background: url("../img/image-film/pokou.jpeg");
-  background-position: center center;
-  background-size: cover;
-}
-
-.deo-fav {
-  width: 12%;
-  height: 230px;
-  margin-top: 5%;
-  position: relative;
-  border-radius: 5px;
-  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.25);
-}
-
-.deo-fav p {
-  position: absolute;
-  color: #ffd700;
-  font-size: 15px;
-  bottom: 0;
-  margin-left: 20%;
-  margin-bottom: -10%;
-}
 
 /* music-favs recentes */
 
@@ -353,26 +238,6 @@ nav {
   animation: apparition 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   animation: augment 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   margin-left: 5%;
-}
-
-.bloc-music-fav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1%;
-  padding-left: 5%;
-}
-
-
-.music-fav {
-  width: 12%;
-  height: 230px;
-  background: url("../img/image-music/trophy_room.png");
-  background-position: center center;
-  background-size: cover;
-  margin-top: 5%;
-  position: relative;
-  border-radius: 5px;
-  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.25);
 }
 
 
@@ -436,15 +301,6 @@ footer {
 
 /* Media query pour les écrans de taille moyenne */
 @media only screen and (max-width: 1024px) {
-  /* .all {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  .sidebar {
-    width: 100vw;
-    height: 5vh;
-  } */
 
   .search input {
     width: 20vw;
@@ -466,20 +322,6 @@ footer {
 
   /*LES PLUS RECENTS*/
 
-  /* .recentes-plus-debut {
-    width: auto;
-    font-size: 20px;
-  }
-  .bloc-recentes-plus {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 2%;
-  }
-
-  .recentes-plus-el {
-    width: 20%;
-  } */
 
   /*deo-favS*/
 
@@ -487,42 +329,12 @@ footer {
     width: auto;
     font-size: 20px;
   }
-  .bloc-deo-fav {
-    display: flex;
-    align-items: flex-start;
-    gap: 4%;
-  }
-
-  .deo-fav {
-    width: 30%;
-  }
 
   /*music-fav*/
 
   .music-fav-debut {
     width: auto;
     font-size: 20px;
-  }
-  .bloc-music-fav {
-    display: flex;
-    align-items: flex-start;
-    gap: 4%;
-  }
-
-  .music-fav {
-    width: 30%;
-  }
-  /*PAGE SUIVANTE*/
-
-  .next-page {
-    width: 18vw;
-    height: 3rem;
-  }
-  .next-page p {
-    width: 100%;
-    text-align: center;
-    font-size: 12px;
-    font-weight: bold;
   }
 }
 /* Media query pour les écrans de petite taille (par exemple, mobile) */
@@ -565,58 +377,15 @@ footer {
     display: none;
   }
 
-  /*LES PLUS RECENTS */
-  /* .bloc-recentes-plus {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 3%;
-  }
+  /*music&deo-favS*/
 
-  .recentes-plus-el {
-    width: 35%;
-    padding: 0;
-  } */
-
-  /*deo-fav*/
-  .bloc-deo-fav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 5%;
-  }
-
-  .deo-fav {
-    width: 60%;
-    padding: 0;
-  }
-
-  /*music-fav*/
-  .bloc-music-fav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 5%;
-  }
-
-  .music-fav {
-    width: 60%;
-    padding: 0;
+  .deo-fav-debut, .music-fav-debut {
+    width: auto;
+    font-size: 15px;
   }
 
 
-  /*PAGE SUIVANTE*/
-  .next-page {
-    width: 20vw;
-    height: 2rem;
-    margin-top: 10%;
-  }
-  .next-page p {
-    width: 100%;
-    text-align: center;
-    font-size: 10px;
-    font-weight: bold;
-  }
+
 
   /*FOOTER*/
 

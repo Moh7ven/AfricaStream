@@ -22,6 +22,12 @@ a {
   text-decoration: none;
 }
 
+.linkplay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .container {
   width: 90%;
   margin: 0 auto;

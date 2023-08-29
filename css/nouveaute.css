@@ -188,7 +188,6 @@ nav {
   display: flex;
   flex-direction: column;
   margin-top: 10%;
-  /* box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.25); */
   animation: apparition 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   animation: augment 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
@@ -378,23 +377,6 @@ footer {
     height: 300px;
   }
 
-  /*LES PLUS RECENTS*/
-
-  /* .recentes-plus-debut {
-    width: auto;
-    font-size: 20px;
-  }
-  .bloc-recentes-plus {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 2%;
-  }
-
-  .recentes-plus-el {
-    width: 20%;
-  } */
-
   /*VIDEOS*/
 
   .deo-debut {
@@ -405,10 +387,6 @@ footer {
     display: flex;
     align-items: flex-start;
     gap: 4%;
-  }
-
-  .video {
-    width: 30%;
   }
 
   /*MUSIQUE*/
@@ -423,9 +401,6 @@ footer {
     gap: 2%;
   }
 
-  .musique {
-    width: 30%;
-  }
   /*VOIR PLUS*/
   .voir-plus {
     margin-top: 3%;
@@ -485,19 +460,6 @@ footer {
     display: none;
   }
 
-  /*LES PLUS RECENTS */
-  /* .bloc-recentes-plus {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 3%;
-  }
-
-  .recentes-plus-el {
-    width: 35%;
-    padding: 0;
-  } */
-
   /*VIDEO*/
   .bloc-deo {
     display: flex;
@@ -506,22 +468,12 @@ footer {
     gap: 5%;
   }
 
-  .video {
-    width: 60%;
-    padding: 0;
-  }
-
   /*MUSIQUE*/
   .bloc-music {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 5%;
-  }
-
-  .musique {
-    width: 60%;
-    padding: 0;
   }
 
   /*VOIR PLUS*/

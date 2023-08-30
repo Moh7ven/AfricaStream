@@ -168,6 +168,11 @@ nav {
   width: 76%;
   margin: 0 auto;
 }
+.linkplay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
 
 /*VIDEO TRAILER*/
 
@@ -293,7 +298,7 @@ nav {
   width: 100%;
   margin-top: 1%;
   margin-bottom: 1%;
-} 
+}
 
 /*PAGE SUIVANTE*/
 

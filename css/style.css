@@ -210,10 +210,10 @@ nav {
 /* Musiques recentes */
 
 .musique-recentes {
-  /* background-color: red; */
   display: flex;
   flex-direction: column;
-  margin-top: 5%;
+  margin-top: 10%;
+  /* box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.25); */
   animation: apparition 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   animation: augment 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
@@ -228,10 +228,10 @@ nav {
   border-radius: 41px;
   color: white;
   font-size: 13px;
-  margin-top: 5%;
-  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.441);
   animation: apparition 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   animation: augment 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  margin-left: 5%;
 }
 /*Conseil*/
 

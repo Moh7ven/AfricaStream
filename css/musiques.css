@@ -169,6 +169,12 @@ nav {
   margin: 0 auto;
 }
 
+.linkplay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*VIDEO TRAILER*/
 
 .video-trailer {
@@ -362,7 +368,6 @@ nav {
   padding-left: 5%;
 }
 
-
 .rap {
   width: 12%;
   height: 230px;
@@ -374,7 +379,6 @@ nav {
   border-radius: 5px;
   box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.25);
 }
-
 
 /*PAGE SUIVANTE*/
 
@@ -603,7 +607,6 @@ footer {
     width: 60%;
     padding: 0;
   }
-
 
   /*PAGE SUIVANTE*/
   .next-page {

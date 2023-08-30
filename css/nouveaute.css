@@ -169,6 +169,12 @@ nav {
   margin: 0 auto;
 }
 
+.linkplay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
 /*VIDEO TRAILER*/
 
 .video-trailer {

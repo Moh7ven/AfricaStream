@@ -16,7 +16,7 @@
 }
 
 .overlay-content {
-  margin-top: 20vh;
+  margin-top: 18vh;
 }
 
 .popup {
@@ -34,7 +34,7 @@
 
 .overlay .close {
   position: absolute;
-  top: 15vh;
+  top: 13vh;
   right: 50%;
   transition: all 200ms;
   font-size: 30px;
@@ -83,7 +83,13 @@ video {
   margin: 0 auto;
   color: #ffd700;
 }
+
+.description-pop h2 u {
+
+}
+
 .description-pop h2 span {
+  color: white;
   margin: 0 auto;
 }
 

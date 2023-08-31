@@ -20,7 +20,7 @@ body {
 
 .container {
   width: 450px;
-  height: 20rem;
+  height: 35rem;
   background-color: white;
   margin: 0 auto;
   border-radius: 15px;
@@ -77,6 +77,13 @@ body {
   margin-top: 1%;
 }
 
+.form-username {
+  display: block;
+  width: 80%;
+  margin: auto;
+  margin-top: 3%;
+}
+
 .form-email {
   display: block;
   width: 80%;
@@ -96,11 +103,12 @@ body {
   margin-top: 3%;
 }
 
-.form-email,
+.form-username,.form-email,
 .form-password {
   margin-left: 15%;
 }
 
+#username,
 #email,
 #password,
 #password2 {

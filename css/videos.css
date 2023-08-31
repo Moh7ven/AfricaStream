@@ -175,6 +175,69 @@ nav {
   align-items: center;
 } 
 
+.descript-contain {
+  width: 80%;
+  height: 300px;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 auto;
+  padding-left: 5%;
+  border-radius: 5px;
+}
+
+.text-descript {
+  width: 90%;
+  text-align: left;
+  margin-top: 7%;
+  font-weight: bolder;
+  animation: apparition 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: vibration 1.2s linear infinite both;
+}
+
+@keyframes apparition {
+  0% {
+    letter-spacing: 1em;
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes vibration {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(2px, -2px);
+  }
+  40% {
+    transform: translate(2px, 2px);
+  }
+  60% {
+    transform: translate(-2px, 2px);
+  }
+  80% {
+    transform: translate(-2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+.text-descript P:first-child {
+  font-size: 45px;
+  color: white;
+  position: relative;
+}
+
+.text-descript P:nth-child(2) {
+  font-size: 18px;
+  color: #ffd700;
+}
+
 /*VIDEO TRAILER*/
 
 .video-trailer {
@@ -331,12 +394,18 @@ footer {
     /* background-color: aquamarine; */
   }
 
-  /*CONTAINER 2*/
-  /*VIDEO TRAILER*/
+ /*CONTAINER 2*/
+ .descript-contain {
+  height: 200px;
+}
 
-  .video-trailer {
-    height: 300px;
-  }
+.text-descript {
+  width: 100%;
+}
+
+.text-descript P:first-child {
+  font-size: 30px;
+}
   /*VIDEOS*/
 
   .dessins-debut {
@@ -413,19 +482,23 @@ footer {
     display: none;
   }
 
-  /*LES PLUS RECENTS */
-  /* .bloc-recentes-plus {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 3%;
+   /*CONTAINER 2*/
+   .descript-contain {
+    height: 120px;
   }
 
-  .recentes-plus-el {
-    width: 35%;
-    padding: 0;
-  } */
+  .text-descript {
+    width: 100%;
+  }
 
+  .text-descript P:first-child {
+    font-size: 16px;
+  }
+
+  .text-descript P:nth-child(2) {
+    font-size: 10px;
+    color: #ffd700;
+  }
   /*VIDEO*/
   .bloc-deo {
     display: flex;

@@ -214,7 +214,6 @@ nav {
   border: 2px solid#ffd700;
   margin-top: 7%;
   position: relative;
-
 }
 
 .part-blue {
@@ -224,7 +223,7 @@ nav {
   width: 100%;
   height: 10rem;
   border-radius: 15px 15px 0px 0px;
-  z-index: 1;    
+  z-index: 1;
 }
 
 .img-info{
@@ -241,7 +240,7 @@ nav {
   z-index: 2;
 }
 
- .info-perso {
+.info-perso {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -250,23 +249,23 @@ nav {
   z-index: 2;
 }
 
-.names, .email {
+.names,
+.email {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
 
-.info-perso img{
+.info-perso img {
   height: 30px;
   width: 30px;
-  
 }
 
-.info-perso span{
+.info-perso span {
   width: 100%;
 }
-.info-perso span:nth-child(2){
+.info-perso span:nth-child(2) {
   margin-left: 5%;
 }
 
@@ -278,7 +277,7 @@ nav {
   margin-top: 5%;
 }
 
-.editer  {
+.editer{
   width: 70px;
   height: 40px;
   background-color: #ffd700;
@@ -300,7 +299,6 @@ nav {
   color: black;
   font-weight: bold;
 }
-
 
 /*FOOTER*/
 
@@ -355,104 +353,150 @@ footer {
     width: 95%;
   }
 
-  nav {
-    flex-direction: column-reverse;
-    gap: 10px;
-  }
-
-  .search input {
-    width: 50vw;
-  }
-
-  .user {
-    font-size: 12px;
-    font-weight: bold;
-    gap: 8px;
-  }
-
-  .user img {
-    width: 30px;
-    height: 30px;
-  }
-
   /*SIDEBAR*/
-  .logo-side {
-    width: 100%;
-    height: 25px;
-    /* background-color: aquamarine; */
+  .logo {
+    font-size: 6px;
+  }
+
+  .btn-bloc {
+    height: 40%;
   }
 
   .btn-content {
-    font-size: 8px;
+    margin-left: 10%;
   }
 
-  .btn-content p {
+  .btn-content div img {
+    height: 18px;
+    width: 18px;
+  }
+
+  .rec-indic {
+    width: 5px;
+  }
+
+  .dashboard {
+    width: 90%;
+  }
+
+  .dash-content p {
     display: none;
   }
-  .back-prof {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #ffd700;
-    border-radius: 34px;
-    width: 38px;
-    height: 38px;
+
+  /* ADD CLIENT SIDEBAR */
+  .add-client {
+    width: 90%;
   }
 
-  .return {
-    width: 50px;
+  .add-client p {
+    display: none;
+  }
+  .add-content {
+    margin-left: 35%;
+  }
+
+  /* LISTE CLIENT SIDEBAR */
+  .liste-client {
+    width: 90%;
+  }
+
+  .liste-content p {
+    display: none;
+  }
+
+  .liste-content {
+    margin-left: 10%;
+  }
+
+  /*  DEPENSES SIDEBAR */
+  .depenses-client {
+    width: 90%;
+  }
+
+  .depenses-content p {
+    display: none;
+  }
+
+  .depenses-content {
+    margin-left: 60%;
+  }
+
+  /*  PROFIL SIDEBAR */
+  .profil-client {
+    width: 90%;
+  }
+
+  .profil-content p {
+    display: none;
+  }
+  .profil-content {
+    margin-left: 50%;
+  }
+
+  /* DECONNEXION SIDEBAR */
+  .deco-side {
+    height: 15%;
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .deco-content p {
+    display: none;
+  }
+  .deco-content {
+    margin-left: 30%;
+  }
+
+  /*HEADER*/
+
+  .user img {
+    width: 39px;
+    height: 39px;
+  }
+
+  .indic-page {
+    /* margin: auto; */
+    width: 105px;
+    height: 40px;
+  }
+
+  .indic-page h1 {
+    font-size: 14px;
+  }
+
+  .identif {
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  /*FOOTER*/
+
+  footer {
+    height: 100px;
+    margin-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 5%;
   }
 
-  .return img {
-    width: 30px;
-    height: 15px;
+  .social {
+    width: 26px;
+    height: 26px;
   }
 
-  .principal {
-    width: 100%;
+  .copyright {
+    font-size: 8px;
   }
-
-  /*CARD PROFIL*/
-
-  .card-profil {
-    width: 330px;
-    height: 25rem;
-  }
-
-  /* .img-profil{
-    width: 88px;
-    height: 88px;
-    margin-left: 40%;
-    margin-top: 40%;
-    position: absolute;
-    z-index: 2;
-  } */
-
-    /*FOOTER*/
-
-    footer {
-      height: 100px;
-      margin-top: 10%;
-      padding-left: 5%;
-      padding-right: 5%;
-    }
-  
-    .footer-container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-top: 5%;
-    }
-  
-    .social {
-      width: 26px;
-      height: 26px;
-    }
-  
-    .copyright {
-      font-size: 8px;
-    }
-  
 }
